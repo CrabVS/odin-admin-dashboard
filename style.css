@@ -2,6 +2,10 @@
     outline: 1px solid black;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     min-height: 100vh;
     display: grid;
@@ -51,4 +55,21 @@ nav {
 
 #main {
     background-color: blue;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
+
+#projects-container,
+#announcements-container,
+#trending-container {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    padding: 14px;
+    padding-top: 24px;
+}
+
+#main-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
