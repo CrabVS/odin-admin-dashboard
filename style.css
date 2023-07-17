@@ -1,0 +1,25 @@
+.item {
+    outline: 1px solid black;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template: 1fr 3fr / 1fr 4fr;
+}
+
+#sidebar {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+#header {
+    background-color: purple;
+}
+
+#main {
+    background-color: blue;
+}
