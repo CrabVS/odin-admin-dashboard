@@ -51,6 +51,12 @@ nav {
     grid-template: 1fr 1fr / 4fr 3fr;
 }
 
+#logo-container {
+    max-width: 300px;
+    width: 100%;
+    justify-self: flex-end;
+}
+
 /* MAIN */
 
 #main {
