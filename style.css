@@ -110,6 +110,32 @@ nav {
     grid-template: 1fr 1fr / 4fr 3fr;
 }
 
+.header-block,
+.header-block ul {
+    display: flex;
+    align-items: center;
+}
+
+.header-block {
+    padding: 0 34px;
+}
+
+.header-block input {
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    outline: none;
+    background-color: #d4dde4;
+    border-radius: 10px;
+}
+
+.searchbar-icon {
+    background-image: url('./res/icons/magnify.svg');
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
 /* MAIN */
 
 #main {
