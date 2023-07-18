@@ -6,6 +6,7 @@
     --dash-blue: #0b9dff;
     --dash-hover: #088de6;
     --dash-gray: #d4dde4;
+    --dash-bright: #c0a324;
 }
 
 * {
@@ -30,7 +31,7 @@ body {
 }
 
 .profile-icon {
-    background-color: rgb(163, 163, 18);
+    background-color: var(--dash-bright);
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -271,4 +272,18 @@ nav {
     background-color: #fff;
 }
 
+.project-block {
+    padding: 22px;
+    border-left: 5px solid var(--dash-bright);
+    border-radius: 7px;
+}
 
+.project-block h4 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.project-block p {
+    color: #444;
+}
