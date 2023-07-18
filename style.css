@@ -233,6 +233,14 @@ nav {
     grid-template-columns: 2fr 1fr;
 }
 
+#main h3 {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: flex-end;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
 #projects-container,
 #announcements-container,
 #trending-container {
@@ -262,3 +270,5 @@ nav {
 #trending {
     background-color: #fff;
 }
+
+
