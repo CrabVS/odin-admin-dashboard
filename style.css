@@ -10,10 +10,21 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family:'Times New Roman', Times, serif;
+}
+
 body {
     min-height: 100vh;
     display: grid;
     grid-template: 1fr 3fr / 1fr 4fr;
+}
+
+.icon {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(116deg) brightness(104%) contrast(104%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /* SIDEBAR */
@@ -43,14 +54,10 @@ body {
 }
 
 #logo-icon {
-    background-image: url("./res/icons/view-dashboard.svg"); /* The image used */
-    background-color: var(--dash-blue); /* Used if the image is unavailable */
-    color: #fff;
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: contain; /* Resize the background image to cover the entire container */
+    background-image: url("./res/icons/view-dashboard.svg");
     width: 40px;
     height: 40px;
+    margin-right: 6px;
 }
 
 #logo-title {
