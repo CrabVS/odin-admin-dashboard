@@ -27,6 +27,13 @@ body {
     background-size: contain;
 }
 
+.profile-icon {
+    background-color: rgb(163, 163, 18);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
 /* SIDEBAR */
 
 #sidebar {
@@ -108,12 +115,18 @@ nav {
     background-color: #fff;
     display: grid;
     grid-template: 1fr 1fr / 4fr 3fr;
+    max-width: 1200px;
 }
 
 .header-block,
 .header-block ul {
     display: flex;
     align-items: center;
+}
+
+.header-block:nth-child(2) {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
 }
 
 .header-block {
@@ -134,6 +147,25 @@ nav {
     height: 24px;
     width: 24px;
     margin-right: 10px;
+}
+
+.bell-icon {
+    background-image: url('./res/icons/bell-ring-outline.svg');
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    justify-self: flex-end;
+    cursor: pointer;
+}
+
+#header .profile-icon {
+    width: 50px;
+    height: 50px;
+    justify-self: center;
+}
+
+#header .profile-name {
+    font-weight: bold;
 }
 
 /* MAIN */
