@@ -168,6 +168,28 @@ nav {
     font-weight: bold;
 }
 
+#header .header-block:nth-child(3) .profile-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 20px;
+}
+
+#header .profile-user {
+    height: 44%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+
+#header .profile-user small {
+    font-size: 0.8rem;
+}
+
+#header .profile-user h2 {
+    font-size: 1.2rem;
+}
+
 /* MAIN */
 
 #main {
