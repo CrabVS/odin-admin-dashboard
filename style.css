@@ -88,6 +88,14 @@ nav {
     align-items: center;
 }
 
+.nav-block li:hover {
+    background-color: #088de6;
+}
+
+#sidebar .nav-block li a:hover {
+    text-decoration: underline;
+}
+
 .nav-icon {
     width: 20px;
     height: 20px;
