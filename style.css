@@ -276,6 +276,8 @@ nav {
     padding: 22px;
     border-left: 5px solid var(--dash-bright);
     border-radius: 7px;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-block h4 {
@@ -286,4 +288,31 @@ nav {
 
 .project-block p {
     color: #444;
+}
+
+.project-icons {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 100%;
+}
+
+.project-icons .icon {
+    filter: none;
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.project-icons .favorite-icon {
+    background-image: url('./res/icons/star-plus-outline.svg');
+}
+
+.project-icons .visible-icon {
+    background-image: url('./res/icons/eye-plus-outline.svg');
+}
+
+.project-icons .share-icon {
+    background-image: url('./res/icons/share-variant-outline.svg');
 }
