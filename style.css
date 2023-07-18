@@ -4,13 +4,14 @@
 
 :root {
     --dash-blue: #0b9dff;
+    --dash-hover: #088de6;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html {
+html, button {
     font-family:'Times New Roman', Times, serif;
 }
 
@@ -32,6 +33,24 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+.btn {
+    background-color: var(--dash-blue);
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 18px;
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--dash-hover);
+}
+
+.btn:active {
+    transform: scale(0.98);
 }
 
 /* SIDEBAR */
@@ -96,7 +115,7 @@ nav {
 }
 
 .nav-block li:hover {
-    background-color: #088de6;
+    background-color: var(--dash-hover);
 }
 
 #sidebar .nav-block li a:hover {
@@ -188,6 +207,21 @@ nav {
 
 #header .profile-user h2 {
     font-size: 1.2rem;
+}
+
+.header-block ul {
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.header-block ul li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-block ul .btn {
+    width: 80%;
 }
 
 /* MAIN */
