@@ -259,6 +259,7 @@ nav {
 #projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 250px);
     gap: 24px;
 }
 
@@ -335,4 +336,31 @@ nav {
 
 #announcements hr {
     margin: 20px 0;
+}
+
+#trending {
+    padding: 30px 20px;
+    border-radius: 10px;
+}
+
+.trending-block {
+    display: flex;
+    align-items: center;
+}
+
+.trending-block .profile-icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 12px;
+}
+
+.trending-profile h6 {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.trending-profile h6:first-child {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 3px;
 }
