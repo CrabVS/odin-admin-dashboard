@@ -232,6 +232,7 @@ nav {
     background-color: var(--dash-gray);
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-width: 1200px;
 }
 
 #main h3 {
